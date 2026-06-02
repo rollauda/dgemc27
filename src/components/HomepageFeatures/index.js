@@ -7,7 +7,7 @@ const FeatureList = [
   {
     title: 'Leçons',
     Svg: require('@site/static/img/justice.svg').default,
-    to: '/docs/L0/accueil',
+    to: '/docs/',
   },
   {
     title: 'Activités',
