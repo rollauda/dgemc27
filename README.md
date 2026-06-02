@@ -24,6 +24,29 @@ npm run build
 > - Tous les paquets `@docusaurus/*` sont épinglés à la **même** version exacte (`3.7.0`, sans `^`). Sinon `theme-mermaid` part en 3.10.x et casse la vérification de version.
 > - `package.json` contient `"overrides": { "webpack": "5.95.0" }` : les webpack récents (5.107+) durcissent le schéma de `ProgressPlugin` et font planter `webpackbar@6`.
 
+## Publier une mise à jour
+
+Le déploiement est **automatique** : tout push sur `main` déclenche le workflow `deploy.yml` (build + publication sur GitHub Pages). Il suffit donc de committer et pousser.
+
+```bash
+git add -A                       # ou git add <fichiers> pour un commit ciblé
+git commit -m "Décris la modif"  # ex. "Publie la leçon L3 + PDF"
+git push                         # déclenche le build + déploiement
+```
+
+Suivi et vérification :
+
+```bash
+gh run watch          # suit le déploiement en cours jusqu'à la fin
+gh run list --limit 5 # historique des derniers déploiements
+```
+
+Le site est en ligne ~1 à 2 min après la fin du workflow. En cas d'échec, `gh run view --log-failed` montre l'erreur.
+
+> Pense aux **PDF** : un polycopié embarqué doit être présent dans `static/pdf/[CxLy]/` et committé, sinon l'embed sera vide en ligne.
+
+> Première fois sur une nouvelle machine : `git clone https://github.com/rollauda/dgemc27.git` puis `npm install`.
+
 ## Statut du déploiement
 
 - ✅ Dépôt `rollauda/dgemc27` (public), `main` poussée, CI `deploy.yml` opérationnelle.
