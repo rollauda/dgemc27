@@ -1,0 +1,126 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #6B8DD6;
+  --ifm-color-primary-dark: #5A7BC8;
+  --ifm-color-primary-darker: #4A6FA5;
+  --ifm-color-primary-darkest: #3A5A91;
+  --ifm-color-primary-light: #7C9EE0;
+  --ifm-color-primary-lighter: #8BB0F0;
+  --ifm-color-primary-lightest: #A3C2F7;
+  --ifm-background-color: #842020;
+  --ifm-font-color-base: #2C3E50;
+  --ifm-navbar-link-color: #2C3E50;
+  --ifm-navbar-link-hover-color: #181819;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-height: 50px;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* 2. Réduction de la taille de police globale */
+  --ifm-font-size-base: 15px;    /* par défaut 16px */
+  --ifm-font-size-small: 14px;   /* par défaut ~14px */
+}
+
+/* Limiter la largeur de l'encart tip sur toutes les pages */
+.theme-admonition {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* cible la balise <footer> générée par Docusaurus */
+.footer {
+  background-color: #9DBCFF  !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Texte et liens en noir */
+.footer,
+.footer a {
+  color: #2C3E50 !important;
+}
+
+/* Réduire la taille du texte du footer à 0.75rem (75% de la taille de base) */
+.footer {
+  font-size: 0.80rem !important;
+}
+
+/* 1. Appliquer le gris sur la barre de navigation principale */
+.theme-layout-navbar,
+.navbar,
+.navbar__inner {
+  background-color: #1e96fc !important;
+}
+
+.navbar__link:hover {
+  color: #ecfdf5 !important;
+  background-color: #ffffff1a !important;
+  border-radius: 6px;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Liens actifs navbar */
+.navbar__link--active,
+.navbar__item--show-dropdown .navbar__link {
+  color: #ecfdf5 !important;
+  background-color: #ffffff26 !important;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* Palette sombre cohérente avec le thème bleu PHIL25 */
+  --ifm-color-primary: #8BB0F0;
+  --ifm-color-primary-dark: #7C9EE0;
+  --ifm-color-primary-darker: #6B8DD6;
+  --ifm-color-primary-darkest: #5A7BC8;
+  --ifm-color-primary-light: #9BC4F3;
+  --ifm-color-primary-lighter: #A3C2F7;
+  --ifm-color-primary-lightest: #B8D4FA;
+  --ifm-background-color: #1a1a1a;
+  --ifm-font-color-base: #e3e3e3;
+  --ifm-navbar-link-color: #e3e3e3;
+  --ifm-navbar-link-hover-color: #8BB0F0; /* Bleu clair harmonieux */
+  --docusaurus-highlighted-code-line-bg: rgba(139, 176, 240, 0.1);
+}
+
+/* Inverser les couleurs des icônes SVG en mode sombre (sauf navbar) */
+[data-theme='dark'] svg {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+
+/* Navbar et footer en mode sombre avec thème bleu */
+[data-theme='dark'] .theme-layout-navbar,
+[data-theme='dark'] .navbar,
+[data-theme='dark'] .navbar__inner {
+  background-color: #2a2a2a !important; /* Gris foncé */
+}
+
+[data-theme='dark'] .footer {
+  background-color: #2a2a2a !important;
+  border-top: 2px solid var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .footer,
+[data-theme='dark'] .footer a {
+  color: #e3e3e3 !important;
+}
+
+/* Liens actifs en mode sombre */
+[data-theme='dark'] .navbar__link--active,
+[data-theme='dark'] .navbar__item--show-dropdown .navbar__link {
+  color: var(--ifm-navbar-link-hover-color) !important;
+  font-weight: 600;
+}
+
+/* 4. Ajustement des titres (optionnel) */
+h1 { font-size: 2.25rem !important; }  /* vs ~2.5rem par défaut */
+h2 { font-size: 1.75rem !important; }  /* vs ~2rem        */
+h3 { font-size: 1.5rem  !important; }  /* vs ~1.75rem     */

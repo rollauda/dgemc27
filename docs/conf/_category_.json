@@ -1,0 +1,8 @@
+{
+  "label": "Conférence annuelle",
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "conf"
+  }
+}
