@@ -23,7 +23,6 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'fr',
@@ -70,6 +69,10 @@ const config = {
   // Active le support de Mermaid pour le Markdown
   markdown: {
     mermaid: true,
+    hooks: {
+      // Remplace siteConfig.onBrokenMarkdownLinks, déprécié depuis Docusaurus 3.9
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
 
   themeConfig:
