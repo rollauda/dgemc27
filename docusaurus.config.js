@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/droit.svg',
 
   // TODO bascule prod : remplacer par https://dgemc.profauda.fr quand dgemc27 prend la suite de dgemc25
-  url: 'https://dgemc27.profauda.fr',
+  url: 'https://dgemc.profauda.fr',
   baseUrl: '/',
 
   organizationName: 'rollauda', // Usually your GitHub org/user name.
