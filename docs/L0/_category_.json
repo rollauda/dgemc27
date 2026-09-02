@@ -1,8 +1,5 @@
 {
-  "label": "Présentation de l'année",
+  "label": "C0 : Présentation de l'option DGEMC",
   "position": 2,
-  "link": {
-    "type": "doc",
-    "id": "accueil"
-  }
+  "link": { "type": "doc", "id": "accueil" }
 }

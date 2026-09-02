@@ -8,3 +8,9 @@ howto.md
 howto-general.md
 howto-clonage-site.md
 **/.DS_Store
+
+# Environnement Python des scripts de publication (venv local, non versionné)
+.venv/
+
+# Mémoire Claude Code (locale, non publiée)
+CLAUDE.md

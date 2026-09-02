@@ -30,7 +30,7 @@ Le déploiement est **automatique** : tout push sur `main` déclenche le workflo
 
 ```bash
 git add -A                       # ou git add <fichiers> pour un commit ciblé
-git commit -m "Décris la modif"  # ex. "Publie la leçon L3 + PDF"
+git commit -m "up"  # ex. "Publie la leçon L3 + PDF"
 git push                         # déclenche le build + déploiement
 ```
 

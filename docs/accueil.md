@@ -8,4 +8,4 @@ sidebar_position: 0
 
 Les leçons de l'année seront publiées ici au fil de la progression.
 
-> Structure des chapitres conservée (dossiers `L0`–`L3` + `conf`) ; contenu à publier via `/dgemc-publier-lecon`.
+
