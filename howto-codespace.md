@@ -2,14 +2,12 @@
 
 ⚠️ **Le cours n'est pas en markdown.** Une leçon, ici, ce sont des documents : le polycopié en `<embed>` PDF, et depuis la rentrée 2026 des diaporamas Marp en iframe. La conséquence est dans la section suivante, et c'est la chose à retenir de ce mémo.
 
-## Publier : quatre commandes
+## Publier : trois commandes
 
 ```bash
-npm run build          # 1. vérifier que le site se construit
-git status             # 2. regarder ce qui va partir
-git add -A             # 3. tout prendre
-git commit -m "Publie C1L2 : les sources du droit"
-git push               # 4. envoyer — le site est en ligne 1 à 2 min après
+npm run build                          # 1. vérifier que le site se construit
+git add -A && git commit -m "update"   # 2. tout enregistrer
+git push                               # 3. envoyer — le site est en ligne 1 à 2 min après
 ```
 
 **Le `push` suffit.** GitHub Actions construit le site et le met en ligne tout seul. Il n'y a rien d'autre à lancer.
@@ -38,15 +36,13 @@ Pour un diaporama, penser aussi à son dossier `assets/` : les images vivent à 
 
 Vérifier ensuite **l'URL réelle** après déploiement, pas seulement l'aperçu local.
 
-## Avant de pousser : quatre vérifications
+## Avant de pousser : les vérifications qui comptent
 
 0. **Regarder `git status`.** `git add -A` prend tout ce qui a changé, à l'instant où vous le lancez. Les dossiers lourds (`.venv/`, `node_modules/`, `build/`) sont ignorés, il n'y a donc rien à craindre de ce côté — mais si une publication est en cours depuis le coffre, vous commiteriez un état à moitié écrit. Un coup d'œil suffit à l'éviter.
 1. **`npm run build` passe.** Un lien mort fait échouer la construction, et le site reste alors sur sa version précédente.
 2. **Le polycopié et les diaporamas sont commités**, avec leurs images. Voir ci-dessus.
 3. **La correspondance `CxLy ↔ L[n]` est à jour** dans `prepa-dgemc/00-Programme/mapping-chapitres.md` du coffre. `CxLy` est l'identifiant pédagogique, `L[n]` la position dans le menu du site : toute leçon nouvelle doit y être ajoutée.
 4. **Rien de personnel.** Ce dépôt est **public** : pas de corrigé réservé, pas de nom d'élève, pas de document sous droits qu'on ne veut pas diffuser.
-
-Et un message qui dit ce qui devient visible : « Publie C1L2 : les sources du droit » se retrouve dans six mois ; « up » ne dit rien.
 
 ## À ne pas faire
 
@@ -100,4 +96,6 @@ Les commandes de publication sont **les mêmes** que ci-dessus.
 
 ## Adresse
 
-Le site est servi sur **dgemc27.profauda.fr**. Il doit prendre **dgemc.profauda.fr**, que sert encore `dgemc25` — bascule décidée mais **volontairement différée**, le temps que le début d'année soit prêt. Elle demande de libérer le domaine côté `dgemc25` **avant** de le réclamer ici : GitHub n'accepte pas qu'un domaine soit revendiqué par deux dépôts.
+Le site est servi sur **dgemc.profauda.fr** depuis le 2026-09-02. Le site 2025-26 est archivé sur **dgemc26.profauda.fr**, où il reste consultable avec tous ses documents.
+
+⚠️ L'ancienne adresse `dgemc27.profauda.fr` **n'est plus servie** et renvoie une 404 sèche : GitHub Pages ne permet aucune redirection. Si vous l'avez diffusée, elle ne mène plus nulle part.
