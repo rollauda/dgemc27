@@ -4,7 +4,7 @@ id: accueil
 title: Qu'est-ce que le droit ?
 ---
 
-# Chapitre 1 : Introduction — qu'est-ce que le droit ?
+# Chapitre 1 : Comment le droit est-il organisé ?
 
 ## Leçon 1 : Qu'est-ce que le droit ?
 
