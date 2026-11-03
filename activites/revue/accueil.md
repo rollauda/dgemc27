@@ -27,3 +27,4 @@ pas de droit.
 Trois dans l'année, une par rubrique. C'est la réunion où la rédaction **décide** de son prochain numéro : qui écrit quoi, sous quelle forme, pour quand. Rédacteurs en chef et secrétaires sont redistribués à chaque conférence ; les chefs de rubrique sont permanents.
 
 - **[Conférence de rédaction n° 1 — ouvrir la Revue](./redaction-1/accueil)** — le chemin de fer de la rubrique 1.
+- **[Conférence de rédaction n° 2 — de la fiche binôme à la production](./redaction-2/accueil)** — les fiches binôme achevées, le tableau des productions, le cahier des charges.
